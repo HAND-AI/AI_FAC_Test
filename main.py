@@ -5,7 +5,6 @@ from src.retrieval.portal_retriever import PortalRetriever
 from src.processing.packing_list_processor import PackingListProcessor
 from src.matching.price_matcher import PriceMatcher
 from src.output.result_writer import ResultWriter
-
 def setup_logging():
     """设置日志配置,循环记录日志,保留7天"""
     log_path = os.path.join('logs', f'packing_list_{datetime.now().strftime("%Y%m%d")}.log')
